@@ -59,7 +59,11 @@ const TemplateWrapper = ({ children }) => (
           />
           <div className="sidebar__github">
           <a href="http://github.com/erichodges" target="_blank" rel="noopener noreferrer">
-          Github Account
+          Github
+          </a>
+          <br />
+          <a href="https://www.linkedin.com/in/ericbhodges/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
           </a>
           </div>
           <ul className="sidebar__menu">
