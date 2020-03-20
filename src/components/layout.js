@@ -46,9 +46,11 @@ const TemplateWrapper = ({ children }) => (
       />
       <div className="container__sidebar">
         <div className="sidebar">
+          <Link to="/" style={{textDecoration: "none"}}>
           <h6 className="sidebar__title">
             {data.datoCmsSite.globalSeo.siteName}
           </h6>
+          </Link>
           <div
             className="sidebar__intro"
             dangerouslySetInnerHTML={{
@@ -56,8 +58,12 @@ const TemplateWrapper = ({ children }) => (
             }}
           />
           <div className="sidebar__github">
-          <a href="http://github.com/erichodges">
-          Github repo
+          <a href="http://github.com/erichodges" target="_blank" rel="noopener noreferrer">
+          Github
+          </a>
+          <br />
+          <a href="https://www.linkedin.com/in/ericbhodges/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
           </a>
           </div>
           <ul className="sidebar__menu">
@@ -85,7 +91,7 @@ const TemplateWrapper = ({ children }) => (
         <div className="container__mobile-header">
           <div className="mobile-header">
             <div className="mobile-header__menu">
-              <Link to="#" data-js="toggleSidebar" />
+              <Link to="/" data-js="toggleSidebar" />
             </div>
             <div className="mobile-header__logo">
               <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
